@@ -1,0 +1,104 @@
+technical_feature,business_feature,importance
+R_email_suffix,R Email Suffix,381098.8345813751
+TransactionAmt,Transaction amount,334439.03692245483
+email_mismatch_ProductCD,Email Mismatch Productcd,242793.93438529968
+amount_cents,Amount includes cents,200796.3202712536
+P_email_provider,P Email Provider,168754.96621322632
+amount_decimal,Amount Decimal,123268.3396859169
+card6,Card type,117342.54845094681
+TransactionHour,Transactionhour,109427.76273465157
+R_email_provider,R Email Provider,90619.29898428917
+amount_decimal_places,Amount Decimal Places,79146.77146434784
+TransactionDayOfWeek,Transactiondayofweek,74573.16155433655
+DeviceInfo_brand,Device information: Brand,66302.48055386543
+amount_bucket_ProductCD,Amount Bucket Productcd,47514.16164922714
+card4_card6,Card network: Card6,45017.5363035202
+payment_familiarity_email_status,Payment Familiarity Email Status,44167.11025381088
+TransactionAmt_log,Transaction amount: Log,41162.34698057175
+os_browser_combo,Os Browser Combo,38828.8731443882
+card4,Card network,38106.207783699036
+id_31_browser_family,Id 31 Browser Family,37707.32945203781
+payment_familiarity_ProductCD,Payment Familiarity Productcd,37098.889654159546
+identity_completeness_ProductCD,Identity Completeness Productcd,34512.92594766617
+id_33_screen_height,Id 33 Screen Height,30812.175644874573
+rare_payment_identifier_flag,Rare Payment Identifier Flag,29442.184931755066
+amount_bucket_time_of_day,Amount Bucket Time Of Day,28997.12540435791
+DeviceType_ProductCD,Device type: Productcd,28328.85793018341
+P_email_suffix,P Email Suffix,27673.035940170288
+device_familiarity_ProductCD,Device Familiarity Productcd,27452.224368572235
+proxy_ProductCD,Proxy Productcd,26755.74148631096
+id_33_screen_area,Id 33 Screen Area,25546.8760638237
+distance_signal_bucket,Distance / location profile: Bucket,24719.848975658417
+only_recipient_email_missing,Only Recipient Email Missing,22451.030700683594
+id_33_aspect_ratio,Id 33 Aspect Ratio,22253.32669854164
+ProductCD,Transaction product type,18311.08818435669
+id_33_screen_width,Id 33 Screen Width,16151.672930717468
+id_31_browser_version_available,Id 31 Browser Version Available,15915.273170471191
+id_30_os_family,Id 30 Os Family,15682.432612895966
+night_ProductCD,Night Productcd,12942.61703157425
+emails_match,Emails Match,12871.903891563416
+distance_bucket_ProductCD,Distance Bucket Productcd,12517.400887489319
+is_large_dist1,Is Large Dist1,12377.392845153809
+screen_size_bucket,Screen Size Bucket,10690.388969898224
+identity_missing_count,Identity Missing Count,10110.10468006134
+payment_identifier_familiarity_bucket,Payment Identifier Familiarity Bucket,9575.022941589355
+common_payment_identifier_flag,Common Payment Identifier Flag,9062.7386302948
+device_familiarity_bucket,Device Familiarity Bucket,8613.870873451233
+email_relationship_status,Email Relationship Status,6952.099538803101
+is_mobile_device,Is Mobile Device,6547.950359344482
+time_of_day_bucket,Time Of Day Bucket,6041.9429931640625
+amount_bucket,Amount Bucket,5940.256982326508
+both_emails_missing,Both Emails Missing,5801.4699630737305
+is_round_amount,Is Round Amount,5547.4359130859375
+has_identity_info,Has Identity Info,5059.196989059448
+missing_R_email,Missing R Email,4919.897693634033
+high_amount_ProductCD,High Amount Productcd,4758.405710220337
+missing_addr1,Missing Addr1,4609.596719741821
+missing_P_email,Missing P Email,4601.075846672058
+addr_missing_count,Addr Missing Count,4325.995099067688
+id_30_os_version_available,Id 30 Os Version Available,4276.00343132019
+is_business_hours,Is Business Hours,3707.364643573761
+address_distance_status,Address Distance Status,3611.0425910949707
+identity_completeness_bucket,Identity Completeness Bucket,3591.166058063507
+same_email_suffix,Same Email Suffix,3123.449697494507
+rare_payment_identifier_large_distance,Rare Payment Identifier Large Distance,2797.238700866699
+night_transaction_large_distance,Night Transaction Large Distance,2439.5324010849
+email_domain_familiarity_bucket,Email domain: Familiarity Bucket,2208.2986993789673
+high_amount_rare_payment_identifier,High Amount Rare Payment Identifier,1899.329294204712
+device_missing,Device Missing,1672.4201955795288
+rare_email_domain_flag,Rare Email Domain Flag,1401.3274235725403
+DeviceType,Device type,1395.021816253662
+email_mismatch_rare_payment_identifier,Email Mismatch Rare Payment Identifier,1097.5476093292236
+is_weekend,Weekend transaction,969.5929050445557
+id_23_anonymous_flag,Id 23 Anonymous Flag,941.2044956684113
+night_transaction_missing_identity,Night Transaction Missing Identity,896.7566156387329
+is_desktop_device,Is Desktop Device,893.7384204864502
+high_amount_missing_identity,High Amount Missing Identity,877.9667978286743
+missing_dist1,Missing Dist1,867.0413403511047
+rare_device_flag,Rare Device Flag,820.7415404319763
+network_proxy_type,Network Proxy Type,729.257091999054
+email_domain_mismatch,Email domain: Mismatch,727.2783513069153
+id_23_missing,Id 23 Missing,549.3886089324951
+same_email_provider,Same Email Provider,469.3616008758545
+has_3_decimal_amount,Has 3 Decimal Amount,468.5144987106323
+high_amount_off_hours,High Amount Off Hours,459.1629800796509
+high_amount_missing_email,High Amount Missing Email,450.44368743896484
+screen_missing,Screen Missing,445.0044918060303
+email_mismatch_missing_identity,Email Mismatch Missing Identity,409.0600891113281
+missing_identity_flag,Missing Identity Flag,356.38440704345703
+id_23_transparent_flag,Id 23 Transparent Flag,354.2518062591553
+high_amount_large_distance,High Amount Large Distance,315.26380252838135
+email_mismatch_proxy_flag,Email Mismatch Proxy Flag,166.91490173339844
+is_night,Late-night transaction,148.9095983505249
+is_high_amount,Is High Amount,140.61029815673828
+id_23_hidden_flag,Id 23 Hidden Flag,76.6511001586914
+missing_addr2,Missing Addr2,70.42430114746094
+rare_payment_identifier_proxy_flag,Rare Payment Identifier Proxy Flag,10.899499893188477
+id_23_proxy_flag,Id 23 Proxy Flag,0.0
+proxy_and_rare_device,Proxy And Rare Device,0.0
+high_amount_rare_device,High Amount Rare Device,0.0
+missing_address_and_distance,Missing Address And Distance,0.0
+address_signal_available,Address Signal Available,0.0
+unusual_screen_ratio,Unusual Screen Ratio,0.0
+high_amount_proxy_flag,High Amount Proxy Flag,0.0
+high_amount_rare_email_domain,High Amount Rare Email Domain,0.0

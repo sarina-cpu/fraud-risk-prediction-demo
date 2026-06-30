@@ -1,0 +1,501 @@
+TransactionID,isFraud,TransactionAmt,ProductCD,card4,card6,TransactionHour,TransactionDayOfWeek,P_emaildomain,R_emaildomain,DeviceType,DeviceInfo,id_23,id_30,id_31,id_33,missing_addr1,missing_addr2,missing_dist1,distance_signal_bucket,has_identity_info,payment_identifier_familiarity_bucket
+3459432,1,33.261,C,visa,debit,2.0,1.0,gmail.com,gmail.com,desktop,,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459433,0,52.811,C,visa,debit,2.0,1.0,hotmail.fr,hotmail.fr,mobile,F3311,,,chrome generic for android,,1,1,1,missing,1,rare_unfamiliar
+3459434,0,136.956,C,visa,debit,2.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,rare_unfamiliar
+3459435,0,136.956,C,visa,debit,2.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459436,0,25.0,H,visa,debit,2.0,1.0,outlook.com,,desktop,Windows,,Windows 10,firefox 59.0,3200x1800,0,0,1,missing,1,common_frequently_observed
+3459437,0,23.362,C,visa,credit,3.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,chrome,,1,1,1,missing,1,common_frequently_observed
+3459438,0,326.29,W,visa,debit,3.0,1.0,,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459439,0,34.0,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459440,0,50.0,W,visa,debit,3.0,1.0,aol.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459441,0,67.95,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459442,0,24.0,W,mastercard,credit,3.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459443,0,30.248,C,visa,debit,3.0,1.0,hotmail.com,hotmail.com,mobile,SM-G610M Build/MMB29K,,,chrome generic for android,,1,1,1,missing,1,common_frequently_observed
+3459444,0,20.0,W,mastercard,credit,3.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459445,0,305.0,W,visa,credit,3.0,1.0,msn.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459446,0,21.948,C,visa,credit,3.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,chrome,,1,1,1,missing,1,common_frequently_observed
+3459447,0,47.95,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459448,0,58.95,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459449,0,34.5,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459450,0,49.0,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459451,0,29.0,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459452,0,29.95,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459453,0,54.5,W,visa,credit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459454,0,46.5,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459455,0,31.95,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459456,0,206.0,W,mastercard,debit,3.0,1.0,,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459457,0,58.95,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459458,0,100.0,R,visa,credit,3.0,1.0,yahoo.com,yahoo.com,mobile,iOS Device,,iOS 10.3.3,mobile safari generic,2048x1536,0,0,1,missing,1,common_frequently_observed
+3459459,0,32.97,W,mastercard,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459460,0,28.773,C,mastercard,credit,3.0,1.0,hotmail.com,hotmail.com,desktop,,,,chrome 65.0,,1,1,1,missing,1,somewhat_familiar
+3459461,0,35.95,W,mastercard,debit,3.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459462,0,10.329,C,mastercard,debit,3.0,1.0,hotmail.com,hotmail.com,mobile,,,,mobile safari generic,,1,1,1,missing,1,common_frequently_observed
+3459463,0,57.95,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459464,0,67.95,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459465,0,25.95,W,visa,debit,3.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459466,0,117.0,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459467,0,34.0,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459468,1,49.0,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459469,0,191.0,W,visa,debit,3.0,1.0,hotmail.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459470,0,117.0,W,mastercard,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459471,0,57.95,W,mastercard,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459472,0,13.0,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459473,0,31.232,C,mastercard,credit,3.0,1.0,anonymous.com,anonymous.com,desktop,Trident/7.0,,,ie 11.0 for desktop,,1,1,1,missing,1,somewhat_familiar
+3459474,0,201.95,W,mastercard,debit,3.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459475,0,117.0,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459476,0,150.0,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459477,0,694.99,W,mastercard,credit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459478,0,59.0,W,visa,debit,3.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459479,0,117.0,W,mastercard,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459480,0,59.0,W,visa,debit,3.0,1.0,,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459481,0,23.055,C,visa,credit,3.0,1.0,gmail.com,gmail.com,desktop,,,,safari generic,,1,1,1,missing,1,common_frequently_observed
+3459482,0,47.0,W,mastercard,debit,3.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459483,0,21.95,W,visa,credit,3.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459484,0,117.0,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459485,0,29.0,W,visa,debit,3.0,1.0,,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459486,0,59.95,W,mastercard,debit,3.0,1.0,aol.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459487,0,48.95,W,visa,debit,3.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459488,0,100.0,R,visa,credit,3.0,1.0,anonymous.com,yahoo.com,desktop,MacOS,,Mac OS X 10_13_4,safari generic,1440x900,0,0,1,missing,1,common_frequently_observed
+3459489,0,73.0,W,mastercard,debit,3.0,1.0,aol.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459490,0,167.0,W,mastercard,debit,3.0,1.0,,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459491,0,150.95,W,mastercard,debit,3.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459492,0,59.0,W,mastercard,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459493,0,59.0,W,visa,debit,3.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459494,0,20.95,W,visa,debit,3.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459495,0,107.95,W,mastercard,debit,3.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459496,0,117.0,W,mastercard,debit,3.0,1.0,aol.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459497,0,54.0,W,visa,debit,3.0,1.0,suddenlink.net,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459498,0,59.0,W,visa,debit,3.0,1.0,rocketmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459499,1,147.552,C,mastercard,debit,3.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,rare_unfamiliar
+3459500,0,108.95,W,visa,debit,3.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459501,0,20.95,W,visa,credit,4.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459502,0,117.0,W,visa,debit,4.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459503,0,42.913,C,mastercard,credit,4.0,1.0,hotmail.com,hotmail.com,mobile,SM-G950F Build/NRD90M,,,chrome generic for android,,1,1,1,missing,1,common_frequently_observed
+3459504,1,147.552,C,visa,debit,4.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459505,0,57.95,W,visa,debit,4.0,1.0,icloud.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459506,0,31.95,W,mastercard,debit,4.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459507,1,59.636,C,mastercard,credit,4.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,edge 16.0,,1,1,1,missing,1,somewhat_familiar
+3459508,0,98.5,W,mastercard,debit,4.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459509,0,555.53,W,visa,credit,4.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459510,1,59.636,C,mastercard,credit,4.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,edge 16.0,,1,1,1,missing,1,somewhat_familiar
+3459511,0,209.95,W,visa,debit,4.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459512,0,103.95,W,visa,debit,4.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459513,0,57.95,W,visa,debit,4.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459515,0,87.99,W,mastercard,debit,4.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459514,1,59.636,C,mastercard,credit,4.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,edge 16.0,,1,1,1,missing,1,somewhat_familiar
+3459516,0,77.0,W,mastercard,debit,4.0,1.0,,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459517,0,21.97,W,visa,debit,4.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459518,0,21.95,W,visa,debit,4.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459519,0,55.578,C,mastercard,credit,4.0,1.0,hotmail.com,hotmail.com,mobile,,,,mobile safari generic,,1,1,1,missing,1,rare_unfamiliar
+3459520,0,1090.0,W,visa,credit,4.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459521,0,103.0,W,mastercard,debit,4.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459522,0,125.0,R,mastercard,debit,4.0,1.0,aol.com,aol.com,mobile,iOS Device,,iOS 11.0.3,mobile safari generic,2208x1242,0,0,1,missing,1,rare_unfamiliar
+3459523,0,26.252,C,mastercard,credit,4.0,1.0,hotmail.de,hotmail.de,mobile,,,,mobile safari generic,,1,1,1,missing,1,rare_unfamiliar
+3459524,0,31.601,C,visa,credit,4.0,1.0,yahoo.com.mx,yahoo.com.mx,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459525,0,117.0,W,visa,credit,4.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459526,0,117.0,W,visa,debit,4.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459527,0,6.332,C,visa,debit,4.0,1.0,gmail.com,gmail.com,,,,,,,1,1,1,missing,0,common_frequently_observed
+3459528,0,44.88,C,visa,credit,4.0,1.0,hotmail.com,hotmail.com,desktop,Moto G (5) Build/NPP25.137-93,,,chrome generic,,1,1,1,missing,1,somewhat_familiar
+3459529,0,58.95,W,visa,debit,4.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459530,0,51.274,C,visa,credit,4.0,1.0,anonymous.com,anonymous.com,mobile,ASUS_X00ID,,,chrome 65.0 for android,,1,1,1,missing,1,somewhat_familiar
+3459531,0,334.95,W,visa,debit,4.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459532,0,86.49,W,visa,debit,4.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459533,0,83.95,W,visa,debit,4.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459534,0,31.601,C,visa,debit,4.0,1.0,hotmail.com,hotmail.com,mobile,SM-G610M Build/MMB29K,,,chrome 63.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459535,0,20.903,C,visa,credit,4.0,1.0,live.com.mx,live.com.mx,mobile,Moto Z2 Play Build/NPSS26.118-19-14,,,chrome generic for android,,1,1,1,missing,1,common_frequently_observed
+3459536,0,46.95,W,visa,debit,4.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459537,0,2.644,C,mastercard,credit,4.0,1.0,gmail.com,gmail.com,desktop,Moto G (4) Build/NPJS25.93-14-10,,,chrome generic,,1,1,1,missing,1,common_frequently_observed
+3459538,0,200.95,W,visa,debit,4.0,1.0,yahoo.com.mx,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459539,0,6.332,C,visa,credit,4.0,1.0,hotmail.com,hotmail.com,,,,,,,1,1,1,missing,0,common_frequently_observed
+3459540,0,47.95,W,mastercard,credit,4.0,1.0,sbcglobal.net,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459541,0,20.903,C,visa,credit,4.0,1.0,live.com.mx,live.com.mx,mobile,Moto Z2 Play Build/NPSS26.118-19-14,,,chrome generic for android,,1,1,1,missing,1,common_frequently_observed
+3459542,0,59.0,W,visa,debit,4.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459543,0,10.0,S,visa,debit,4.0,1.0,,gmail.com,desktop,,IP_PROXY:TRANSPARENT,Linux,chrome 65.0,1920x1080,0,0,1,missing,1,common_frequently_observed
+3459544,0,20.903,C,visa,credit,4.0,1.0,live.com.mx,live.com.mx,mobile,Moto Z2 Play Build/NPSS26.118-19-14,,,chrome generic for android,,1,1,1,missing,1,common_frequently_observed
+3459545,0,159.95,W,mastercard,credit,4.0,1.0,,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459546,0,30.95,W,mastercard,debit,4.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459547,0,20.903,C,visa,credit,4.0,1.0,live.com.mx,live.com.mx,,,,,,,1,1,1,missing,0,common_frequently_observed
+3459548,0,11.681,C,mastercard,debit,4.0,1.0,hotmail.com,hotmail.com,mobile,LG-D693n Build/LRX22G,,,chrome 56.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459549,0,15.95,W,mastercard,credit,4.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459550,0,17.214,C,mastercard,debit,4.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459551,0,316.63,W,visa,debit,4.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459552,0,2594.95,W,mastercard,credit,4.0,1.0,me.com,,,,,,,,1,1,1,missing,0,somewhat_familiar
+3459553,0,2594.95,W,mastercard,credit,4.0,1.0,me.com,,,,,,,,1,1,1,missing,0,somewhat_familiar
+3459554,0,47.708,C,visa,credit,4.0,1.0,hotmail.com,hotmail.com,mobile,Moto G Play Build/MPIS24.241-15.3-7,,,chrome 65.0 for android,,1,1,1,missing,1,somewhat_familiar
+3459555,0,54.5,W,visa,debit,4.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459556,0,11.435,C,mastercard,credit,4.0,1.0,hotmail.fr,hotmail.fr,desktop,,,,safari generic,,1,1,1,missing,1,rare_unfamiliar
+3459557,0,47.708,C,visa,credit,5.0,1.0,hotmail.com,hotmail.com,mobile,Moto G Play Build/MPIS24.241-15.3-7,,,chrome 65.0 for android,,1,1,1,missing,1,somewhat_familiar
+3459558,0,108.95,W,mastercard,credit,5.0,1.0,aol.com,,,,,,,,0,0,0,medium,0,rare_unfamiliar
+3459559,0,47.708,C,visa,credit,5.0,1.0,hotmail.com,hotmail.com,mobile,Moto G Play Build/MPIS24.241-15.3-7,,,chrome 65.0 for android,,1,1,1,missing,1,somewhat_familiar
+3459560,1,319.95,W,mastercard,debit,5.0,1.0,,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459561,0,108.95,W,visa,debit,5.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459562,0,209.95,W,visa,debit,5.0,1.0,,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459563,0,12.234,C,visa,debit,5.0,1.0,gmail.com,gmail.com,mobile,SM-J700M Build/MMB29K,,,chrome 65.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459564,0,27.0,W,visa,debit,5.0,1.0,att.net,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459565,0,57.95,W,visa,debit,5.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459566,0,75.45,W,visa,debit,5.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459567,0,98.95,W,mastercard,debit,5.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459568,0,7.623,C,visa,debit,5.0,1.0,outlook.es,outlook.es,mobile,,,,mobile safari generic,,1,1,1,missing,1,common_frequently_observed
+3459569,0,40.085,C,visa,credit,5.0,1.0,hotmail.com,hotmail.com,mobile,Moto G Play Build/MPIS24.241-15.3-7,,,chrome 65.0 for android,,1,1,1,missing,1,somewhat_familiar
+3459570,0,39.0,W,visa,credit,5.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459571,0,28.896,C,mastercard,debit,5.0,1.0,gmail.com,gmail.com,desktop,,,,chrome 65.0,,1,1,1,missing,1,somewhat_familiar
+3459572,0,37.257,C,visa,credit,5.0,1.0,gmail.com,gmail.com,desktop,Windows,,,edge 16.0,,1,1,1,missing,1,common_frequently_observed
+3459573,0,507.95,W,mastercard,debit,5.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459574,0,21.641,C,visa,debit,5.0,1.0,gmail.com,gmail.com,mobile,XT1064 Build/MPB24.65-34-3,,,chrome 65.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459575,0,28.896,C,mastercard,debit,5.0,1.0,gmail.com,gmail.com,desktop,,,,chrome 65.0,,1,1,1,missing,1,somewhat_familiar
+3459576,0,554.0,W,mastercard,debit,5.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459578,1,315.95,W,visa,debit,5.0,1.0,icloud.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459577,0,28.896,C,mastercard,debit,5.0,1.0,gmail.com,gmail.com,desktop,,,,chrome 65.0,,1,1,1,missing,1,somewhat_familiar
+3459579,0,57.95,W,mastercard,debit,5.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459580,0,28.896,C,mastercard,debit,5.0,1.0,gmail.com,gmail.com,desktop,,,,chrome 65.0,,1,1,1,missing,1,somewhat_familiar
+3459581,0,28.896,C,mastercard,credit,5.0,1.0,gmail.com,gmail.com,desktop,,,,chrome 65.0,,1,1,1,missing,1,somewhat_familiar
+3459582,0,34.0,W,mastercard,credit,5.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459583,0,30.95,W,visa,debit,5.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,rare_unfamiliar
+3459584,0,34.0,W,visa,credit,5.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459585,0,15.0,W,mastercard,debit,5.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459586,0,57.95,W,visa,debit,5.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459587,0,47.95,W,visa,debit,5.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459588,0,35.95,W,visa,debit,5.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459589,0,25.95,W,visa,debit,5.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459590,0,51.889,C,mastercard,debit,5.0,1.0,hotmail.com,hotmail.com,desktop,Moto G (5) Build/NPP25.137-82,,,chrome generic,,1,1,1,missing,1,common_frequently_observed
+3459591,0,117.0,W,mastercard,debit,5.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459592,0,184.95,W,visa,credit,5.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459593,0,87.95,W,visa,debit,5.0,1.0,msn.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459594,0,311.95,W,visa,debit,5.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459595,0,88.95,W,visa,debit,5.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459596,0,169.0,W,visa,debit,5.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459597,0,17.05,W,visa,debit,6.0,1.0,comcast.net,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459598,0,20.95,W,visa,debit,6.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459599,0,117.95,W,mastercard,debit,6.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459600,0,88.5,W,visa,debit,6.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459601,0,68.95,W,visa,debit,6.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459602,0,36.95,W,visa,debit,6.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459603,0,49.0,W,mastercard,debit,6.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459604,0,44.5,W,visa,debit,6.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459605,0,77.0,W,visa,debit,6.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459606,0,88.5,W,visa,debit,6.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459607,0,39.0,W,visa,debit,6.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459608,0,49.0,W,visa,debit,6.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459609,0,125.0,R,visa,debit,6.0,1.0,gmail.com,anonymous.com,desktop,Windows,,Windows 10,chrome 65.0,1600x900,0,0,1,missing,1,rare_unfamiliar
+3459610,0,50.0,R,visa,credit,6.0,1.0,gmail.com,gmail.com,desktop,MacOS,,Mac OS X 10_13_1,safari generic,1440x900,0,0,1,missing,1,common_frequently_observed
+3459611,0,55.0,S,mastercard,debit,6.0,1.0,,yahoo.com,desktop,Windows,,Windows 10,chrome 65.0,1366x768,0,0,1,missing,1,common_frequently_observed
+3459612,0,18.99,W,visa,debit,6.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459613,0,209.95,W,visa,debit,6.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459614,0,44.5,W,visa,debit,6.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459615,0,49.0,W,visa,debit,6.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459616,0,335.0,W,visa,debit,6.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459617,0,335.0,W,visa,debit,6.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459618,0,335.0,W,visa,debit,6.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459619,0,107.95,W,mastercard,debit,6.0,1.0,outlook.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459620,0,34.306,C,mastercard,debit,6.0,1.0,hotmail.com,hotmail.com,desktop,Windows,,,chrome generic,,1,1,1,missing,1,common_frequently_observed
+3459621,0,49.0,W,visa,debit,6.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459622,0,117.0,W,mastercard,debit,7.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459623,0,149.95,W,visa,debit,7.0,1.0,,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459624,0,97.95,W,mastercard,credit,7.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459625,0,39.0,W,visa,credit,7.0,1.0,hotmail.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459626,0,117.0,W,mastercard,debit,7.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459627,1,12.436,C,visa,debit,7.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459628,1,12.436,C,visa,debit,7.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459629,1,12.436,C,visa,debit,7.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459630,1,12.436,C,visa,debit,7.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459631,0,261.95,W,visa,debit,7.0,1.0,anonymous.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459632,0,188.0,W,visa,debit,7.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459633,0,88.0,W,visa,debit,7.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459634,0,129.95,W,visa,debit,7.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459635,1,12.436,C,visa,debit,7.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459636,0,159.95,W,visa,debit,8.0,1.0,,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459637,0,59.0,W,visa,debit,8.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459638,0,107.95,W,visa,debit,8.0,1.0,,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459639,1,15.616,C,visa,debit,8.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459640,1,15.616,C,visa,debit,8.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459641,0,196.0,W,mastercard,debit,8.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459642,0,336.58,W,mastercard,debit,8.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459643,0,57.95,W,visa,debit,8.0,1.0,anonymous.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459644,1,77.0,W,mastercard,debit,9.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459645,0,336.58,W,mastercard,debit,9.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459646,0,102.99,W,mastercard,credit,9.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459647,0,134.95,W,visa,debit,9.0,1.0,aol.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459648,0,57.95,W,visa,debit,9.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459649,0,34.0,W,visa,debit,9.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459650,0,107.95,W,visa,debit,9.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459651,0,27.97,W,visa,debit,9.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459652,0,2399.49,W,visa,debit,9.0,1.0,icloud.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459653,0,57.95,W,visa,debit,9.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459654,1,527.0,W,visa,debit,9.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459655,0,107.95,W,visa,debit,9.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459656,0,104.0,W,visa,debit,9.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459657,0,59.0,W,mastercard,debit,9.0,1.0,,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459658,0,50.0,H,visa,debit,9.0,1.0,gmail.com,gmail.com,desktop,Windows,,Windows 7,chrome 65.0,1366x768,0,0,1,missing,1,common_frequently_observed
+3459659,0,87.95,W,visa,debit,10.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459660,0,47.95,W,visa,debit,10.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459661,0,25.0,H,mastercard,debit,10.0,1.0,yahoo.com,yahoo.com,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459662,1,72.99,W,discover,credit,10.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459663,1,842.0,W,visa,debit,10.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459664,0,59.0,W,visa,debit,10.0,1.0,,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459665,0,107.95,W,visa,debit,10.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459666,0,226.0,W,visa,debit,10.0,1.0,hotmail.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459667,0,35.95,W,mastercard,debit,10.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459668,0,445.0,W,visa,debit,10.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459669,0,42.95,W,visa,debit,10.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459670,0,445.0,W,visa,debit,10.0,1.0,outlook.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459671,0,445.0,W,visa,debit,10.0,1.0,outlook.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459672,0,100.0,H,visa,credit,10.0,1.0,frontier.com,gmail.com,mobile,iOS Device,,iOS 11.2.6,mobile safari generic,1334x750,0,0,1,missing,1,common_frequently_observed
+3459673,0,95.0,S,mastercard,debit,10.0,1.0,,icloud.com,desktop,Windows,,Windows 8,chrome generic,1920x1080,0,0,1,missing,1,common_frequently_observed
+3459674,0,445.0,W,visa,debit,10.0,1.0,outlook.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459675,0,72.0,W,visa,debit,10.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459676,0,117.0,W,mastercard,credit,10.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459677,0,59.0,W,visa,debit,10.0,1.0,verizon.net,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459678,0,34.0,W,visa,credit,10.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459679,0,445.0,W,visa,debit,10.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459680,0,29.5,W,visa,debit,10.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459681,0,445.0,W,visa,debit,10.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459682,0,98.95,W,mastercard,debit,10.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459683,0,445.0,W,visa,debit,10.0,1.0,outlook.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459684,0,201.0,W,visa,debit,10.0,1.0,,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459685,0,265.99,W,mastercard,credit,10.0,1.0,comcast.net,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459686,1,22.502,C,mastercard,debit,11.0,1.0,gmail.com,gmail.com,mobile,RNE-L03 Build/HUAWEIRNE-L03,,,chrome 65.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459687,0,150.0,R,visa,credit,11.0,1.0,hotmail.com,gmail.com,desktop,Windows,,Windows 8.1,chrome 65.0,1366x768,0,0,1,missing,1,common_frequently_observed
+3459688,0,57.95,W,visa,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459689,0,150.0,R,visa,credit,11.0,1.0,hotmail.com,gmail.com,desktop,Windows,,Windows 8.1,chrome 65.0,1366x768,0,0,1,missing,1,common_frequently_observed
+3459690,0,49.0,W,mastercard,debit,11.0,1.0,sbcglobal.net,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459691,0,57.95,W,visa,debit,11.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459692,0,1961.0,W,visa,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459693,0,378.0,W,mastercard,debit,11.0,1.0,,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459694,0,335.0,W,mastercard,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459695,0,54.0,W,visa,debit,11.0,1.0,aol.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459696,0,50.0,W,visa,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459697,0,50.0,W,visa,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459698,1,43.528,C,mastercard,credit,11.0,1.0,gmail.com,gmail.com,mobile,RNE-L03 Build/HUAWEIRNE-L03,,,chrome 65.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459699,0,159.0,W,visa,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459700,0,311.95,W,visa,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459701,0,67.95,W,visa,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459702,0,117.0,W,mastercard,debit,11.0,1.0,aol.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459703,0,59.0,W,visa,debit,11.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459704,0,554.0,W,mastercard,debit,11.0,1.0,comcast.net,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459705,0,57.95,W,visa,debit,11.0,1.0,,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459706,0,356.5,W,mastercard,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459707,0,17.829,C,visa,credit,11.0,1.0,gmail.com,gmail.com,mobile,LG-X210 Build/LMY47I,,,chrome 65.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459708,0,150.0,R,mastercard,debit,11.0,1.0,gmail.com,gmail.com,mobile,iOS Device,,iOS 11.3.0,mobile safari generic,2208x1242,0,0,1,missing,1,rare_unfamiliar
+3459709,0,150.0,R,mastercard,debit,11.0,1.0,gmail.com,gmail.com,mobile,iOS Device,,iOS 11.3.0,mobile safari generic,2208x1242,0,0,1,missing,1,rare_unfamiliar
+3459710,0,159.95,W,visa,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459711,0,150.0,R,mastercard,debit,11.0,1.0,gmail.com,gmail.com,mobile,iOS Device,,iOS 11.3.0,mobile safari generic,2208x1242,0,0,1,missing,1,rare_unfamiliar
+3459712,0,150.0,R,mastercard,debit,11.0,1.0,gmail.com,gmail.com,mobile,iOS Device,,iOS 11.3.0,mobile safari generic,2208x1242,0,0,1,missing,1,rare_unfamiliar
+3459713,0,107.95,W,mastercard,debit,11.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459714,0,107.95,W,mastercard,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459715,0,150.0,R,mastercard,debit,11.0,1.0,gmail.com,gmail.com,mobile,iOS Device,,iOS 11.3.0,mobile safari generic,2208x1242,0,0,1,missing,1,rare_unfamiliar
+3459716,0,59.0,W,mastercard,debit,11.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459717,0,150.0,R,mastercard,debit,11.0,1.0,gmail.com,gmail.com,mobile,iOS Device,,iOS 11.3.0,mobile safari generic,2208x1242,0,0,1,missing,1,rare_unfamiliar
+3459718,0,49.0,W,mastercard,debit,11.0,1.0,,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459719,0,117.0,W,mastercard,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459720,0,59.0,W,visa,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459721,0,117.0,W,visa,credit,11.0,1.0,bellsouth.net,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459722,0,150.0,R,visa,credit,11.0,1.0,gmail.com,gmail.com,mobile,iOS Device,,iOS 11.3.0,mobile safari generic,2208x1242,0,0,1,missing,1,common_frequently_observed
+3459723,0,49.0,W,mastercard,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459724,0,59.0,W,visa,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459725,0,57.95,W,visa,debit,11.0,1.0,anonymous.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459726,0,117.0,W,visa,credit,11.0,1.0,bellsouth.net,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459727,0,57.95,W,visa,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459728,0,207.5,W,visa,debit,11.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459729,0,117.0,W,visa,credit,11.0,1.0,bellsouth.net,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459730,0,47.95,W,visa,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459731,0,117.0,W,visa,credit,11.0,1.0,bellsouth.net,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459732,0,57.95,W,mastercard,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459733,0,57.95,W,visa,debit,11.0,1.0,,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459734,0,117.0,W,visa,debit,11.0,1.0,bellsouth.net,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459735,0,117.0,W,visa,credit,11.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459736,0,78.97,W,mastercard,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459737,0,45.5,W,mastercard,credit,11.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459738,0,1099.0,W,mastercard,credit,11.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459739,0,280.0,W,mastercard,credit,11.0,1.0,aol.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459740,0,295.0,W,mastercard,credit,11.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459741,0,117.0,W,discover,credit,11.0,1.0,bellsouth.net,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459742,0,200.0,R,american express,credit,11.0,1.0,anonymous.com,aol.com,desktop,Trident/7.0,,Windows 7,ie 11.0 for desktop,1280x1024,0,0,1,missing,1,rare_unfamiliar
+3459743,0,54.5,W,visa,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459744,0,77.0,W,visa,debit,11.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459745,0,40.95,W,mastercard,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459746,0,77.0,W,visa,debit,11.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459747,0,15.0,W,mastercard,debit,11.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459748,0,24.0,W,mastercard,debit,11.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459749,0,77.0,W,visa,debit,11.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459750,0,59.0,W,mastercard,debit,11.0,1.0,,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459751,0,25.95,W,visa,debit,11.0,1.0,,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459752,0,200.0,R,american express,credit,11.0,1.0,anonymous.com,aol.com,desktop,Trident/7.0,,Windows 7,ie 11.0 for desktop,1280x1024,0,0,1,missing,1,rare_unfamiliar
+3459753,0,32.215,C,visa,debit,11.0,1.0,gmail.com,gmail.com,mobile,SM-J700M Build/MMB29K,,,chrome 65.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459754,1,299.95,W,mastercard,debit,11.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459755,0,77.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459756,0,57.95,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459757,0,151.0,W,visa,debit,12.0,1.0,outlook.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459758,0,312.95,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459759,0,50.0,R,mastercard,debit,12.0,1.0,yahoo.com,icloud.com,mobile,iOS Device,,iOS 11.3.0,mobile safari generic,2208x1242,0,0,1,missing,1,somewhat_familiar
+3459760,0,59.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459761,0,57.95,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459762,0,117.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459763,0,31.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459764,0,54.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459765,0,49.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459766,0,59.0,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459767,0,662.47,W,visa,debit,12.0,1.0,anonymous.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459768,0,49.0,W,visa,debit,12.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459769,0,47.95,W,mastercard,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459770,0,77.0,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459771,0,26.0,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459772,0,31.95,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459773,0,29.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459774,0,103.95,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459775,1,107.95,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459776,0,1011.95,W,visa,debit,12.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459777,0,25.0,H,mastercard,debit,12.0,1.0,gmail.com,gmail.com,desktop,Windows,,Windows 10,chrome 58.0,1920x1080,0,0,1,missing,1,common_frequently_observed
+3459778,0,57.95,W,mastercard,debit,12.0,1.0,,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459779,0,35.95,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459780,0,39.0,W,visa,debit,12.0,1.0,comcast.net,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459781,0,117.0,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459782,0,160.5,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459783,0,27.297,C,mastercard,credit,12.0,1.0,yahoo.fr,yahoo.fr,mobile,SM-A520F Build/NRD90M,,,chrome generic for android,,1,1,1,missing,1,rare_unfamiliar
+3459784,1,409.0,W,discover,credit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459785,0,449.95,W,discover,debit,12.0,1.0,charter.net,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459786,0,335.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459787,0,115.0,W,mastercard,debit,12.0,1.0,,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459788,0,105.95,W,mastercard,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459789,0,97.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459790,0,59.0,W,mastercard,credit,12.0,1.0,,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459791,0,50.0,S,visa,debit,12.0,1.0,,hotmail.com,desktop,Windows,,Windows 7,chrome 65.0,1280x1024,0,0,1,missing,1,rare_unfamiliar
+3459792,0,350.0,R,visa,credit,12.0,1.0,anonymous.com,anonymous.com,desktop,Windows,,Windows 10,chrome generic,1920x1080,0,0,1,missing,1,common_frequently_observed
+3459793,0,226.0,W,visa,credit,12.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459794,0,335.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459795,0,49.0,W,visa,debit,12.0,1.0,att.net,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459796,0,50.0,S,visa,debit,12.0,1.0,,hotmail.com,desktop,Windows,,Windows 7,chrome 65.0,1280x1024,0,0,1,missing,1,rare_unfamiliar
+3459797,0,82.0,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459798,0,50.0,S,visa,debit,12.0,1.0,,hotmail.com,desktop,Windows,,Windows 7,chrome 65.0,1280x1024,0,0,1,missing,1,rare_unfamiliar
+3459799,0,226.0,W,mastercard,credit,12.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459800,0,59.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459801,0,350.0,R,visa,credit,12.0,1.0,anonymous.com,anonymous.com,desktop,Windows,,Windows 10,chrome generic,1920x1080,0,0,1,missing,1,common_frequently_observed
+3459802,0,24.5,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459803,0,57.95,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459804,0,100.0,R,mastercard,credit,12.0,1.0,hotmail.com,anonymous.com,desktop,Windows,,Windows 10,chrome 65.0,1920x1080,0,0,1,missing,1,common_frequently_observed
+3459805,0,100.0,H,mastercard,debit,12.0,1.0,gmail.com,gmail.com,mobile,SAMSUNG-SM-G925A Build/MMB29K,,Android 6.0.1,chrome 65.0 for android,2560x1440,0,0,1,missing,1,common_frequently_observed
+3459806,0,57.95,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459807,0,100.0,H,mastercard,debit,12.0,1.0,gmail.com,gmail.com,mobile,SAMSUNG-SM-G925A Build/MMB29K,,Android 6.0.1,chrome 65.0 for android,2560x1440,0,0,1,missing,1,common_frequently_observed
+3459808,0,100.0,H,mastercard,debit,12.0,1.0,gmail.com,gmail.com,mobile,SAMSUNG-SM-G925A Build/MMB29K,,Android 6.0.1,chrome 65.0 for android,2560x1440,0,0,1,missing,1,common_frequently_observed
+3459809,0,10.0,S,visa,credit,12.0,1.0,,anonymous.com,desktop,Trident/7.0,,Windows 7,ie 11.0 for desktop,1279x1024,0,0,1,missing,1,common_frequently_observed
+3459810,0,39.0,W,mastercard,debit,12.0,1.0,msn.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459811,0,39.0,W,mastercard,debit,12.0,1.0,,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459812,0,54.5,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459813,0,57.95,W,visa,debit,12.0,1.0,anonymous.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459814,0,226.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459815,0,200.0,R,mastercard,credit,12.0,1.0,anonymous.com,anonymous.com,desktop,Windows,,Windows 7,chrome 65.0,1920x1080,0,0,1,missing,1,rare_unfamiliar
+3459816,0,30.95,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459817,0,43.036,C,mastercard,debit,12.0,1.0,hotmail.com,hotmail.com,mobile,SM-G928G Build/NRD90M,,,chrome 65.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459818,0,34.0,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459819,0,49.0,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459820,0,47.95,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459821,0,327.95,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459822,1,159.95,W,visa,credit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459823,0,82.0,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459824,0,109.0,W,mastercard,credit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459825,0,201.0,W,mastercard,credit,12.0,1.0,anonymous.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459826,0,115.0,W,visa,debit,12.0,1.0,embarqmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459827,0,49.0,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459828,0,107.95,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459829,0,29.203,C,visa,debit,12.0,1.0,gmail.com,gmail.com,desktop,rv:59.0,,,firefox 59.0,,1,1,1,missing,1,common_frequently_observed
+3459830,0,107.95,W,visa,debit,12.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459831,0,92.0,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459832,1,77.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459833,0,150.0,R,mastercard,credit,12.0,1.0,anonymous.com,comcast.net,desktop,MacOS,,Mac OS X 10_13_4,chrome 65.0,2560x1600,0,0,1,missing,1,somewhat_familiar
+3459834,0,335.0,W,visa,debit,12.0,1.0,outlook.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459835,0,209.95,W,mastercard,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459836,0,117.0,W,visa,debit,12.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459837,0,34.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459838,0,330.99,W,visa,debit,12.0,1.0,outlook.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459839,0,39.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459840,0,310.0,S,american express,credit,12.0,1.0,,yahoo.com,desktop,Windows,,Windows 10,firefox 59.0,1920x1080,0,0,1,missing,1,rare_unfamiliar
+3459841,0,207.76,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459842,0,29.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459843,0,250.0,R,mastercard,debit,12.0,1.0,aol.com,anonymous.com,desktop,rv:11.0,IP_PROXY:ANONYMOUS,Windows 7,ie 11.0 for desktop,1280x1024,0,0,1,missing,1,rare_unfamiliar
+3459844,0,66.95,W,visa,debit,12.0,1.0,hotmail.com,,,,,,,,0,0,0,medium,0,rare_unfamiliar
+3459845,0,107.95,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459846,0,77.0,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459847,0,69.0,W,mastercard,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,medium,0,rare_unfamiliar
+3459848,1,554.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459849,0,57.95,W,visa,credit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459850,0,29.0,W,visa,debit,12.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459851,0,304.95,W,visa,credit,12.0,1.0,aol.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459852,0,100.0,S,american express,credit,12.0,1.0,,anonymous.com,desktop,,,Linux,chrome 65.0,2400x1600,0,0,1,missing,1,rare_unfamiliar
+3459853,0,317.5,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459854,0,57.95,W,visa,debit,12.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459856,0,117.0,W,visa,debit,12.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459855,0,146.0,W,visa,debit,12.0,1.0,anonymous.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459857,0,100.0,S,american express,credit,12.0,1.0,,anonymous.com,desktop,,,Linux,chrome 65.0,2400x1600,0,0,1,missing,1,rare_unfamiliar
+3459858,0,58.95,W,mastercard,debit,12.0,1.0,,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459859,0,15.0,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459860,0,57.95,W,visa,credit,13.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459861,0,245.11,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459862,0,79.95,W,visa,credit,13.0,1.0,icloud.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459863,0,20.95,W,mastercard,debit,13.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459864,0,57.95,W,visa,debit,13.0,1.0,yahoo.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459865,0,200.0,R,visa,credit,13.0,1.0,gmail.com,gmail.com,desktop,MacOS,,Mac OS X 10_12_6,chrome 65.0,1440x900,0,0,1,missing,1,common_frequently_observed
+3459866,0,35.95,W,visa,debit,13.0,1.0,,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459867,0,69.0,W,mastercard,debit,13.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459868,0,396.95,W,visa,debit,13.0,1.0,,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459869,0,107.95,W,visa,credit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459870,0,1099.99,W,mastercard,debit,13.0,1.0,bellsouth.net,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459871,0,87.95,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459872,0,49.0,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459873,0,20.95,W,visa,debit,13.0,1.0,,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459874,0,160.5,W,visa,debit,13.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459875,0,30.95,W,visa,debit,13.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459876,0,107.95,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459877,0,29.757,C,visa,debit,13.0,1.0,gmail.com,gmail.com,desktop,Windows,,,chrome 65.0,,1,1,1,missing,1,common_frequently_observed
+3459878,0,25.0,S,mastercard,debit,13.0,1.0,,hotmail.com,desktop,Windows,,Windows 10,edge 16.0,1366x767,0,0,1,missing,1,somewhat_familiar
+3459879,1,994.0,W,mastercard,credit,13.0,1.0,att.net,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459880,0,351.95,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459881,0,100.0,R,mastercard,credit,13.0,1.0,gmail.com,gmail.com,desktop,Windows,,Windows 7,chrome 65.0,1680x1050,0,0,1,missing,1,somewhat_familiar
+3459882,0,34.0,W,mastercard,debit,13.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459883,1,15.247,C,visa,credit,13.0,1.0,gmail.com,gmail.com,mobile,SM-J510MN Build/MMB29M,,,chrome 50.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459884,0,69.0,W,mastercard,debit,13.0,1.0,yahoo.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459885,1,159.95,W,visa,credit,13.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459886,0,35.95,W,visa,debit,13.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459887,1,15.247,C,visa,credit,13.0,1.0,gmail.com,gmail.com,mobile,SM-J510MN Build/MMB29M,,,chrome 50.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459888,0,25.95,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459889,0,226.0,W,visa,credit,13.0,1.0,att.net,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459890,0,34.0,W,visa,debit,13.0,1.0,yahoo.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459891,0,67.95,W,visa,credit,13.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459892,1,15.247,C,visa,credit,13.0,1.0,gmail.com,gmail.com,mobile,SM-J510MN Build/MMB29M,,,chrome 50.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459893,0,431.05,W,visa,debit,13.0,1.0,,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459894,0,64.0,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459895,0,107.95,W,mastercard,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459896,0,994.0,W,mastercard,debit,13.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459897,0,167.0,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459898,0,524.95,W,visa,debit,13.0,1.0,,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459899,0,107.95,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459900,0,852.97,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459901,0,20.5,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,common_frequently_observed
+3459902,0,49.0,W,visa,debit,13.0,1.0,hotmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459903,0,24.5,W,mastercard,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459904,0,186.0,W,mastercard,debit,13.0,1.0,aol.com,,,,,,,,0,0,0,large,0,somewhat_familiar
+3459905,0,34.5,W,visa,credit,13.0,1.0,anonymous.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459906,0,59.0,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459907,0,47.95,W,mastercard,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459908,0,54.5,W,mastercard,debit,13.0,1.0,aol.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459909,1,15.247,C,visa,credit,13.0,1.0,gmail.com,gmail.com,mobile,SM-J510MN Build/MMB29M,,,chrome 50.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459910,0,112.5,W,visa,debit,13.0,1.0,verizon.net,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459911,0,117.0,W,visa,credit,13.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,rare_unfamiliar
+3459912,0,39.0,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459913,0,804.95,W,visa,credit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459914,0,171.0,W,mastercard,debit,13.0,1.0,,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459915,0,171.0,W,visa,debit,13.0,1.0,anonymous.com,,,,,,,,0,0,1,missing,0,common_frequently_observed
+3459916,0,432.95,W,visa,debit,13.0,1.0,,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459917,0,390.0,W,visa,credit,13.0,1.0,hotmail.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459918,1,15.247,C,visa,credit,13.0,1.0,gmail.com,gmail.com,mobile,SM-J510MN Build/MMB29M,,,chrome 50.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459919,0,524.95,W,mastercard,credit,13.0,1.0,hotmail.com,,,,,,,,0,0,1,missing,0,rare_unfamiliar
+3459920,0,36.95,W,mastercard,debit,13.0,1.0,,,,,,,,,0,0,0,large,0,rare_unfamiliar
+3459921,0,117.0,W,visa,debit,13.0,1.0,aol.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459922,0,107.95,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459923,0,47.95,W,mastercard,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,rare_unfamiliar
+3459924,0,44.5,W,visa,credit,13.0,1.0,aol.com,,,,,,,,0,0,0,medium,0,common_frequently_observed
+3459925,0,18.075,C,mastercard,debit,13.0,1.0,gmail.com,gmail.com,mobile,SM-G610M Build/MMB29K,,,chrome 65.0 for android,,1,1,1,missing,1,common_frequently_observed
+3459926,0,97.0,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,1,missing,0,somewhat_familiar
+3459927,0,75.0,S,visa,credit,13.0,1.0,,icloud.com,desktop,Windows,,Windows 7,chrome 65.0,1280x1024,0,0,1,missing,1,somewhat_familiar
+3459928,0,378.0,W,visa,credit,13.0,1.0,hotmail.com,,,,,,,,0,0,0,medium,0,somewhat_familiar
+3459929,0,57.95,W,mastercard,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,large,0,common_frequently_observed
+3459930,0,117.0,W,visa,debit,13.0,1.0,gmail.com,,,,,,,,0,0,0,small,0,somewhat_familiar
+3459931,0,97.0,W,visa,debit,13.0,1.0,aol.com,,,,,,,,0,0,0,large,0,somewhat_familiar

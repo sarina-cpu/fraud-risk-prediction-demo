@@ -1,0 +1,21 @@
+input_column,input_label,input_type,required,default_value,section,description
+TransactionAmt,Transaction Amount,number,True,68.95,Transaction,Transaction value entered by the user.
+ProductCD,Product Type,select,True,W,Transaction,Product or transaction category from the source system.
+TransactionHour,Transaction Hour,slider,True,12,Transaction,"Hour of the transaction, 0 to 23."
+TransactionDayOfWeek,Transaction Day of Week,select,True,2,Transaction,Day-of-week or weekly timing pattern. In real data this should come from the actual timestamp.
+card4,Card Network,select,False,visa,Card / Payment,Card network or payment network where available.
+card6,Card Type,select,False,debit,Card / Payment,Card/payment type such as debit or credit where available.
+payment_identifier_familiarity_bucket,Payment Identifier Familiarity,select,False,somewhat_familiar,Card / Payment,Business-safe proxy for how common/familiar the payment identifier pattern is. This is not raw card1 and should not be described as literal customer history.
+missing_addr1,Address available,select,False,0,Address / Location,Whether the main address/location signal is available for this transaction.
+missing_addr2,Country code available,select,False,0,Address / Location,Whether the country-like address signal is available for this transaction.
+missing_dist1,Distance signal available,select,False,0,Address / Location,Whether the distance/location signal is available for this transaction.
+distance_signal_bucket,Distance / location profile,select,False,medium,Address / Location,Business-level description of the distance/location pattern.
+P_emaildomain,Purchaser Email Domain,text_or_select,False,gmail.com,Email,Purchaser email domain.
+R_emaildomain,Recipient Email Domain,text_or_select,False,missing,Email,"Recipient email domain, if available."
+DeviceType,Device Type,select,False,missing,Device / Identity,Device type such as desktop or mobile.
+DeviceInfo,Device Information,text_or_select,False,missing,Device / Identity,Device information string where available.
+id_23,Proxy / Network Signal,select,False,missing,Device / Identity,"Proxy or network signal such as transparent, anonymous, or hidden proxy."
+id_30,Operating System,text_or_select,False,missing,Device / Identity,Operating system / OS version string.
+id_31,Browser,text_or_select,False,missing,Device / Identity,Browser / browser version string.
+id_33,Screen Resolution,text_or_select,False,missing,Device / Identity,"Screen resolution, for example 1920x1080."
+has_identity_info,Identity / Device Information Available,select,False,1,Device / Identity,Whether any identity/device information is available.

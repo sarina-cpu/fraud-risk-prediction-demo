@@ -1,0 +1,26 @@
+{
+  "model_name": "fraud_lgbm_manual_simulation_v2",
+  "model_type": "LightGBM",
+  "purpose": "Manual risk simulation using business-understandable inputs and generated risk indicators.",
+  "feature_version": "manual_simulation_business_inputs_v2",
+  "notes": "Raw masked helper columns such as card1, addr1, addr2 and dist1 are not final app inputs. card1 is used only in the notebook to derive payment_identifier_familiarity_bucket.",
+  "n_features": 103,
+  "threshold": 0.736669299922188,
+  "medium_threshold": 0.3,
+  "target": "isFraud",
+  "train_rows": 472432,
+  "valid_rows": 118108,
+  "roc_auc": 0.8000396401257754,
+  "pr_auc": 0.20419933262194423,
+  "artifact_files": [
+    "model.pkl",
+    "feature_engineer.pkl",
+    "model_features.csv",
+    "performance.csv",
+    "input_schema.csv",
+    "input_options.json",
+    "model_metadata.json",
+    "feature_importance.csv",
+    "sample_manual_inputs.csv"
+  ]
+}

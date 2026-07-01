@@ -923,6 +923,124 @@ def format_explanation_method(method):
     }
     return method_map.get(str(method), str(method))
 
+def _metric_quality_label(value, metric_name):
+    """
+    Return a simple business-friendly label for model performance metrics.
+    These are not strict statistical rules; they are presentation labels for demo interpretation.
+    """
+    try:
+        value = float(value)
+    except Exception:
+        return "Not available"
+
+    if metric_name == "roc_auc":
+        if value >= 0.90:
+            return "Very strong separation"
+        if value >= 0.80:
+            return "Strong separation"
+        if value >= 0.70:
+            return "Useful separation"
+        if value >= 0.60:
+            return "Limited separation"
+        return "Weak separation"
+
+    if metric_name == "pr_auc":
+        if value >= 0.50:
+            return "Very strong fraud detection signal"
+        if value >= 0.30:
+            return "Strong fraud detection signal"
+        if value >= 0.15:
+            return "Useful fraud detection signal"
+        if value >= 0.05:
+            return "Limited fraud detection signal"
+        return "Weak fraud detection signal"
+
+    return "Model performance indicator"
+
+
+def render_model_metric_explainer(row, threshold_value, model_context="upload"):
+    """
+    Business-friendly explanation for the main model performance metrics.
+    Designed for business users who may not know ROC-AUC, PR-AUC, recall, or precision.
+    """
+    roc_auc = row.get("roc_auc", 0)
+    pr_auc = row.get("pr_auc", 0)
+
+    roc_label = _metric_quality_label(roc_auc, "roc_auc")
+    pr_label = _metric_quality_label(pr_auc, "pr_auc")
+
+    if model_context == "scenario":
+        model_wording = "scenario simulation model"
+        use_case_wording = "testing how business inputs affect predicted risk"
+    else:
+        model_wording = "upload prioritization model"
+        use_case_wording = "ranking uploaded transactions for investigation"
+
+    st.info(
+        f"""
+        **How to read these results in business terms**
+
+        - **ROC-AUC: {float(roc_auc):.3f} — {roc_label}.**  
+          This shows how well the {model_wording} separates higher-risk transactions from lower-risk transactions overall. 
+          A higher value means the model is better at ranking genuinely suspicious transactions above normal ones.
+
+        - **PR-AUC: {float(pr_auc):.3f} — {pr_label}.**  
+          This is especially important for fraud because fraud cases are rare. It shows whether the model can find fraud cases 
+          without overwhelming the review team with too many false alerts.
+
+        - **Best threshold: {format_pct(threshold_value)}.**  
+          This is the score cut-off used to classify transactions as higher risk. In practice, this threshold should be adjusted 
+          based on review capacity, risk appetite, and how many cases the team can realistically investigate.
+
+        - **Features.**  
+          This is the number of model-ready signals used for prediction. More features does not automatically mean a better model; 
+          what matters is whether those signals help support {use_case_wording}.
+        """
+    )
+
+
+def render_review_capacity_explainer(review_perf_df):
+    """
+    Business-friendly explanation for review capacity, recall, and precision.
+    """
+    st.info(
+        """
+        **How to read review capacity performance**
+
+        This section answers a practical business question:  
+        **If the team can only review the highest-risk 1%, 3%, 5%, or 10% of transactions, how much fraud could they catch?**
+
+        - **Review capacity** = the share of transactions the team chooses to investigate.
+        - **Review count** = how many transactions that would mean in practice.
+        - **Fraud caught** = how many actual fraud cases are found in that review group.
+        - **Recall** = the share of all fraud cases captured by reviewing that top-risk group.
+        - **Precision** = how many reviewed cases are actually fraud.
+
+        For fraud analytics, this is often more useful than accuracy because the goal is not to classify every transaction perfectly. 
+        The goal is to help investigators spend limited review time on the cases most likely to matter.
+        """
+    )
+
+
+def render_global_explanation_explainer():
+    """
+    Business-friendly explanation for global SHAP and feature importance.
+    """
+    st.info(
+        """
+        **How to read the global model explanation**
+
+        These charts explain what the model tends to rely on across many transactions, not just one case.
+
+        - **Global SHAP summary** shows which signals usually push fraud risk up or down. 
+          Points further to the right increase predicted risk; points further to the left reduce predicted risk.
+
+        - **Feature importance** shows which signals the model used most often or found most useful when making predictions.
+
+        These charts are useful for explaining the model's overall behavior, but they should not be read as business rules. 
+        For example, a feature can be important to the model without meaning that every transaction with that feature is automatically suspicious.
+        """
+    )
 
 apply_app_theme()
 
@@ -2220,6 +2338,8 @@ elif page == "Model Performance":
             c3.metric("Best threshold", format_pct(row.get("best_threshold", high_threshold)))
             c4.metric("Features", f"{int(row.get('n_features', len(selected_features))):,}")
 
+            render_model_metric_explainer(row=row, threshold_value=row.get("best_threshold", high_threshold), model_context="upload",)
+            
             st.subheader("Review capacity performance")
 
             st.markdown(
@@ -2242,10 +2362,14 @@ elif page == "Model Performance":
 
             review_perf_df = pd.DataFrame(review_rows)
             st.dataframe(review_perf_df, use_container_width=True)
-
+            
+            render_review_capacity_explainer(review_perf_df)
+            
             render_review_capacity_chart(review_perf_df, metric="Recall")
 
             st.divider()
+
+            render_global_explanation_explainer()
 
             render_saved_model_insights(
                 model_folder="upload_model",
@@ -2286,6 +2410,8 @@ elif page == "Model Performance":
                 c3.metric("Best threshold", format_pct(row.get("best_threshold", mh)))
                 c4.metric("Features", f"{int(row.get('n_features', 0)):,}")
 
+                render_model_metric_explainer(row=row, threshold_value=row.get("best_threshold", mh), model_context="scenario",)
+                
                 st.subheader("Review capacity performance")
 
                 st.markdown(
@@ -2307,10 +2433,14 @@ elif page == "Model Performance":
 
                 review_perf_df = pd.DataFrame(review_rows)
                 st.dataframe(review_perf_df, use_container_width=True)
-
+                
+                render_review_capacity_explainer(review_perf_df)
+                
                 render_review_capacity_chart(review_perf_df, metric="Recall")
 
                 st.divider()
+                
+                render_global_explanation_explainer()
 
                 render_saved_model_insights(
                     model_folder="manual_model",

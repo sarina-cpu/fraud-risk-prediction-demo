@@ -1559,14 +1559,14 @@ page = st.sidebar.radio(
     [
         "Executive Overview",
         "Upload & Prioritize",
-        "Manual Simulation",
+        "Scenario Simulation",
         "Model Performance",
     ],
 )
 
 st.sidebar.markdown("---")
 st.sidebar.caption("Upload scoring: Top 500 LightGBM model")
-st.sidebar.caption("Manual simulation: simplified business-input model")
+st.sidebar.caption("Scenario simulation: simplified business-input model")
 
 
 # ============================================================
@@ -1633,7 +1633,7 @@ if page == "Executive Overview":
         st.markdown(
             """
             - Use **Upload & Prioritize** to demonstrate the operational workflow: file upload, risk scoring, review capacity, and transaction inspection.
-            - Use **Manual Simulation** to teach the business logic: how high-level transaction inputs become model features, risk scores, and explanations.
+            - Use **Scenario Simulation** to teach the business logic: how high-level transaction inputs become model features, risk scores, and explanations.
             - Use **Model Performance** to discuss validation results and why review-capacity metrics are more useful than accuracy for fraud detection.
             """
         )
@@ -1804,8 +1804,8 @@ elif page == "Upload & Prioritize":
 # Manual simulation page
 # ============================================================
 
-elif page == "Manual Simulation":
-    st.title("Manual Scenario Simulation")
+elif page == "Scenario Simulation":
+    st.title("Scenario Simulation")
 
     st.markdown(
         """
@@ -1982,8 +1982,6 @@ elif page == "Manual Simulation":
                 use_container_width=True,
                 key="manual_generate_explanation_button",
             )
-        with col_note:
-            st.caption("Technical diagnostics are available below for troubleshooting during the demo build.")
 
         if generate_explanation:
             st.session_state["manual_explanation_debug"] = []
@@ -2032,35 +2030,6 @@ elif page == "Manual Simulation":
                 _debug_log(f"Explanation failed: {repr(e)}")
                 st.error("Could not generate an explanation for this manual scenario.")
                 st.exception(e)
-
-        with st.expander("Technical diagnostics for manual explanation", expanded=False):
-            st.caption("Use this during development if the explanation does not appear or fails silently.")
-            logs = st.session_state.get("manual_explanation_debug", [])
-            if logs:
-                st.code("\n".join(logs), language="text")
-            else:
-                st.caption("No explanation attempt logged yet. Score a scenario, then click Generate explanation.")
-
-            last_error = st.session_state.get("manual_last_explanation_error")
-            if last_error:
-                st.markdown("**Last error traceback**")
-                st.code(last_error, language="text")
-
-            with st.expander("Debug data shapes", expanded=False):
-                st.write(
-                    {
-                        "X_manual_shape": X_manual.shape,
-                        "generated_all_shape": generated_all.shape,
-                        "manual_model_type": str(type(manual_model)),
-                        "manual_feature_engineer_type": str(type(manual_feature_engineer)),
-                    }
-                )
-                st.write("X_manual dtypes")
-                st.dataframe(
-                    X_manual.dtypes.astype(str).reset_index().rename(columns={"index": "feature", 0: "dtype"}),
-                    use_container_width=True,
-                    hide_index=True,
-                )
 
     else:
         st.caption("Score a manual scenario to see the prediction, generated features, and explanation controls.")

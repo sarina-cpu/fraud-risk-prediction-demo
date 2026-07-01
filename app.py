@@ -275,6 +275,39 @@ FEATURE_DISPLAY_NAME_OVERRIDES = {
     "rare_payment_identifier_proxy_flag": "Rare payment identifier with proxy/network signal",
     "rare_payment_identifier_large_distance": "Rare payment identifier with large distance signal",
     "proxy_and_rare_device": "Proxy signal with rare device pattern",
+    "P_email_provider": "Purchaser email provider",
+    "P_email_suffix": "Purchaser email suffix",
+    "R_email_provider": "Recipient email provider",
+    "R_email_suffix": "Recipient email suffix",
+    "same_email_provider": "Same email provider",
+    "same_email_suffix": "Same email suffix",
+    "both_emails_missing": "Both email domains missing",
+    "only_recipient_email_missing": "Only recipient email missing",
+
+    "amount_decimal": "Decimal amount component",
+    "amount_cents": "Cents in transaction amount",
+    "amount_decimal_places": "Number of decimal places",
+
+    "id_23_missing": "Proxy / network signal missing",
+    "screen_missing": "Screen resolution missing",
+    "id_33_screen_width": "Screen width",
+    "id_33_screen_height": "Screen height",
+    "id_33_screen_area": "Screen area",
+    "id_33_aspect_ratio": "Screen aspect ratio",
+
+    "payment_familiarity_email_status": "Payment familiarity and email status",
+    "high_amount_ProductCD": "High amount and transaction type",
+    "night_ProductCD": "Night transaction and transaction type",
+    "email_mismatch_ProductCD": "Email mismatch and transaction type",
+    "distance_bucket_ProductCD": "Distance profile and transaction type",
+    "proxy_ProductCD": "Proxy signal and transaction type",
+    "DeviceType_ProductCD": "Device type and transaction type",
+    "card4_card6": "Card network and card type",
+    "amount_bucket_ProductCD": "Amount band and transaction type",
+    "amount_bucket_time_of_day": "Amount band and time of day",
+    "payment_familiarity_ProductCD": "Payment familiarity and transaction type",
+    "device_familiarity_ProductCD": "Device familiarity and transaction type",
+    "identity_completeness_ProductCD": "Identity completeness and transaction type",
 }
 
 FEATURE_EXPLANATIONS = {
@@ -380,6 +413,21 @@ BUCKET_LABELS = {
     "complete": "Complete",
     "partial": "Partial",
     "incomplete": "Incomplete",
+    
+    "recipient_missing": "Recipient email missing",
+    "purchaser_missing": "Purchaser email missing",
+    "both_missing": "Both email domains missing",
+    "different_domains": "Different email domains",
+    "missing_or_incomplete": "Missing or incomplete email information",
+
+    "rare_unfamiliar_recipient_missing": "Rare payment pattern with recipient email missing",
+    "rare_unfamiliar_purchaser_missing": "Rare payment pattern with purchaser email missing",
+    "rare_unfamiliar_both_missing": "Rare payment pattern with both email domains missing",
+    "rare_unfamiliar_different_domains": "Rare payment pattern with different email domains",
+    "somewhat_familiar_recipient_missing": "Somewhat familiar payment pattern with recipient email missing",
+    "somewhat_familiar_different_domains": "Somewhat familiar payment pattern with different email domains",
+    "common_frequently_observed_same_domain": "Common payment pattern with same email domain",
+    "common_frequently_observed_different_domains": "Common payment pattern with different email domains",
 }
 
 
@@ -1504,39 +1552,124 @@ def render_generated_feature_explainers(feature_table, form_values):
             ],
         )
 
-
 def _friendly_shap_display_name(feature, display_map, known_features):
     feature = str(feature)
 
+    # Sometimes sklearn feature names include a transformer prefix like cat__feature_value.
+    if "__" in feature:
+        feature = feature.split("__", 1)[1]
+
+    # Direct match: normal model feature name.
     if feature in display_map:
         return display_map[feature]
 
-    # For one-hot encoded columns, sklearn creates names like:
-    # ProductCD_W or amount_bucket_very_high.
-    # Find the longest original feature prefix and display it as Feature = category.
+    # One-hot / encoded match:
+    # Example: email_relationship_status_recipient_missing
+    # Should become: Email Relationship Status = Recipient email missing
     best_prefix = None
-    for candidate in known_features:
+
+    for candidate in sorted(known_features, key=len, reverse=True):
+        candidate = str(candidate)
+        if not candidate:
+            continue
+
         if feature.startswith(candidate + "_"):
-            if best_prefix is None or len(candidate) > len(best_prefix):
-                best_prefix = candidate
+            best_prefix = candidate
+            break
 
     if best_prefix is not None:
         category = feature[len(best_prefix) + 1:]
         label = display_map.get(best_prefix, _humanize_token(best_prefix))
         return f"{label} = {_humanize_token(category)}"
 
-    return feature
+    # Last fallback: never show raw snake_case if we can avoid it.
+    return _humanize_token(feature)
 
 
-def apply_display_names(shap_df, feature_engineer):
+def apply_display_names(shap_df, feature_engineer, X_model=None, feature_table=None):
+    """
+    Apply the same business-friendly naming logic used by the generated feature explanations
+    to SHAP outputs.
+
+    This handles:
+    1. Direct model features, e.g. is_high_amount
+    2. Generated features from the feature engineer display map
+    3. App-level overrides
+    4. One-hot encoded SHAP features, e.g. email_relationship_status_recipient_missing
+    """
     display_map = get_display_map(feature_engineer)
-    known_features = set(display_map.keys()) | set(MANUAL_DIRECT_INPUT_COLUMNS) | set(MANUAL_GENERATED_FEATURE_PRIORITY)
+
+    # Reuse the exact display names already built for the generated feature explanation cards.
+    if feature_table is not None and not feature_table.empty:
+        try:
+            feature_table_map = dict(
+                zip(feature_table["feature"].astype(str), feature_table["display_name"].astype(str))
+            )
+            display_map.update(feature_table_map)
+        except Exception:
+            pass
+
+    known_features = (
+        set(display_map.keys())
+        | set(MANUAL_DIRECT_INPUT_COLUMNS)
+        | set(MANUAL_GENERATED_FEATURE_PRIORITY)
+    )
+
+    # Add the actual model input columns, which is the most reliable source for scenario SHAP.
+    if X_model is not None:
+        try:
+            known_features.update([str(c) for c in X_model.columns])
+        except Exception:
+            pass
+
+    # Add feature-engineer attributes if available.
+    if feature_engineer is not None:
+        for attr in ["feature_cols_", "MODEL_FEATURES"]:
+            if hasattr(feature_engineer, attr):
+                try:
+                    known_features.update([str(c) for c in getattr(feature_engineer, attr)])
+                except Exception:
+                    pass
 
     shap_df = shap_df.copy()
     shap_df["display_name"] = shap_df["feature"].apply(
         lambda x: _friendly_shap_display_name(x, display_map, known_features)
     )
+
     return shap_df
+    
+# def _friendly_shap_display_name(feature, display_map, known_features):
+#     feature = str(feature)
+
+#     if feature in display_map:
+#         return display_map[feature]
+
+#     # For one-hot encoded columns, sklearn creates names like:
+#     # ProductCD_W or amount_bucket_very_high.
+#     # Find the longest original feature prefix and display it as Feature = category.
+#     best_prefix = None
+#     for candidate in known_features:
+#         if feature.startswith(candidate + "_"):
+#             if best_prefix is None or len(candidate) > len(best_prefix):
+#                 best_prefix = candidate
+
+#     if best_prefix is not None:
+#         category = feature[len(best_prefix) + 1:]
+#         label = display_map.get(best_prefix, _humanize_token(best_prefix))
+#         return f"{label} = {_humanize_token(category)}"
+
+#     return feature
+
+
+# def apply_display_names(shap_df, feature_engineer):
+#     display_map = get_display_map(feature_engineer)
+#     known_features = set(display_map.keys()) | set(MANUAL_DIRECT_INPUT_COLUMNS) | set(MANUAL_GENERATED_FEATURE_PRIORITY)
+
+#     shap_df = shap_df.copy()
+#     shap_df["display_name"] = shap_df["feature"].apply(
+#         lambda x: _friendly_shap_display_name(x, display_map, known_features)
+#     )
+#     return shap_df
 
 
 # ============================================================
@@ -1778,8 +1911,8 @@ elif page == "Upload & Prioritize":
                             row_position=int(selected_row["_row_position"]),
                             top_n=15,
                         )
-
-                    shap_df = apply_display_names(shap_df, feature_engineer)
+                        
+                    shap_df = apply_display_names(shap_df, feature_engineer, X_model=X_model,)
 
                     st.success("Explanation generated.")
                     if "explanation_method" in shap_df.columns and not shap_df.empty:
@@ -2005,7 +2138,8 @@ elif page == "Scenario Simulation":
                     if "explanation_method" in shap_df.columns:
                         _debug_log(f"Explanation method: {shap_df['explanation_method'].iloc[0]}")
 
-                    shap_df = apply_display_names(shap_df, manual_feature_engineer)
+                    shap_df = apply_display_names(shap_df, manual_feature_engineer, X_model=X_manual, feature_table=feature_table,)
+                    
                     _debug_log("Display names applied successfully.")
 
                 st.success("Explanation generated.")

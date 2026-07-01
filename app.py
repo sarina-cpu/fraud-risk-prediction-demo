@@ -2316,7 +2316,7 @@ elif page == "Model Performance":
                     "Run the model insights notebook first."
                 )
 
-    tab_upload, tab_manual = st.tabs(["Upload model", "Manual simulation model"])
+    tab_upload, tab_manual = st.tabs(["Upload model", "Simulation model"])
 
     with tab_upload:
         st.markdown(
@@ -2332,11 +2332,46 @@ elif page == "Model Performance":
         else:
             row = performance_df.iloc[0]
 
+            # c1, c2, c3, c4 = st.columns(4)
+            # c1.metric("ROC-AUC", f"{row.get('roc_auc', 0):.3f}")
+            # c2.metric("PR-AUC", f"{row.get('pr_auc', 0):.3f}")
+            # c3.metric("Best threshold", format_pct(row.get("best_threshold", high_threshold)))
+            # c4.metric("Features", f"{int(row.get('n_features', len(selected_features))):,}")
+            
+
             c1, c2, c3, c4 = st.columns(4)
-            c1.metric("ROC-AUC", f"{row.get('roc_auc', 0):.3f}")
-            c2.metric("PR-AUC", f"{row.get('pr_auc', 0):.3f}")
-            c3.metric("Best threshold", format_pct(row.get("best_threshold", high_threshold)))
-            c4.metric("Features", f"{int(row.get('n_features', len(selected_features))):,}")
+            c1.metric(
+                "ROC-AUC",
+                f"{row.get('roc_auc', 0):.3f}",
+                help=(
+                    "Shows how well the model separates higher-risk transactions from lower-risk ones overall. "
+                    "A higher value means the model is better at ranking suspicious transactions above normal transactions."
+                ),
+            )
+            c2.metric(
+                "PR-AUC",
+                f"{row.get('pr_auc', 0):.3f}",
+                help=(
+                    "Especially important for fraud because fraud cases are rare. "
+                    "It shows how well the model finds fraud cases without overwhelming the team with too many false alerts."
+                ),
+            )
+            c3.metric(
+                "Best threshold",
+                format_pct(row.get("best_threshold", high_threshold)),
+                help=(
+                    "This is the risk-score cut-off used to classify transactions as higher risk. "
+                    "In practice, the threshold can be adjusted depending on review capacity and risk appetite."
+                ),
+            )
+            c4.metric(
+                "Features",
+                f"{int(row.get('n_features', len(selected_features))):,}",
+                help=(
+                    "The number of model-ready signals used by the model. "
+                    "More features do not automatically mean a better model; what matters is whether they improve prioritization quality."
+                ),
+            )
 
             render_model_metric_explainer(row=row, threshold_value=row.get("best_threshold", high_threshold), model_context="upload",)
             

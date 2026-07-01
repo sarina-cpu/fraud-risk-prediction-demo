@@ -1270,7 +1270,7 @@ def render_manual_form(schema_df, options_dict, sample_row=None):
                             key=key,
                         )
 
-        submitted = st.form_submit_button("Score manual scenario", type="primary")
+        submitted = st.form_submit_button("Score scenario", type="primary")
 
     return submitted, form_values
 
@@ -1831,7 +1831,7 @@ elif page == "Scenario Simulation":
     c3.metric("High-risk threshold", format_pct(mh))
 
     st.info(
-        "This manual model is intentionally simpler than the upload model. Use it to explain concepts and test scenarios, not as the primary operational detector."
+        "This scenario model is intentionally simpler than the upload model. Use it to explain concepts and test scenarios, not as the primary operational detector."
     )
 
     # ------------------------------------------------------------------

@@ -1637,39 +1637,6 @@ def apply_display_names(shap_df, feature_engineer, X_model=None, feature_table=N
     )
 
     return shap_df
-    
-# def _friendly_shap_display_name(feature, display_map, known_features):
-#     feature = str(feature)
-
-#     if feature in display_map:
-#         return display_map[feature]
-
-#     # For one-hot encoded columns, sklearn creates names like:
-#     # ProductCD_W or amount_bucket_very_high.
-#     # Find the longest original feature prefix and display it as Feature = category.
-#     best_prefix = None
-#     for candidate in known_features:
-#         if feature.startswith(candidate + "_"):
-#             if best_prefix is None or len(candidate) > len(best_prefix):
-#                 best_prefix = candidate
-
-#     if best_prefix is not None:
-#         category = feature[len(best_prefix) + 1:]
-#         label = display_map.get(best_prefix, _humanize_token(best_prefix))
-#         return f"{label} = {_humanize_token(category)}"
-
-#     return feature
-
-
-# def apply_display_names(shap_df, feature_engineer):
-#     display_map = get_display_map(feature_engineer)
-#     known_features = set(display_map.keys()) | set(MANUAL_DIRECT_INPUT_COLUMNS) | set(MANUAL_GENERATED_FEATURE_PRIORITY)
-
-#     shap_df = shap_df.copy()
-#     shap_df["display_name"] = shap_df["feature"].apply(
-#         lambda x: _friendly_shap_display_name(x, display_map, known_features)
-#     )
-#     return shap_df
 
 
 # ============================================================

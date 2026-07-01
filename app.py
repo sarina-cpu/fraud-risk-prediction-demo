@@ -976,7 +976,7 @@ def render_model_metric_explainer(row, threshold_value, model_context="upload"):
         model_wording = "upload prioritization model"
         use_case_wording = "ranking uploaded transactions for investigation"
 
-    with st.expander("How to read these results in business terms", expanded=False):
+    with st.expander("How to read these results", expanded=False):
         st.markdown(
             f"""
             - **ROC-AUC: {float(roc_auc):.3f} — {roc_label}.**  
@@ -2384,22 +2384,22 @@ elif page == "Model Performance":
 
             st.divider()
 
-            render_global_explanation_explainer()
-
             render_saved_model_insights(
                 model_folder="upload_model",
                 model_label="Upload Model",
                 shap_file_name="global_shap_summary.png",
                 importance_file_name="feature_importance_gain.png",
             )
-
+            
+            render_global_explanation_explainer()
+            
             with st.expander("Full performance file"):
                 st.dataframe(performance_df, use_container_width=True)
 
     with tab_manual:
         st.markdown(
             """
-            This page summarizes the saved validation results for the manual simulation model.
+            This page summarizes the saved validation results for the scenario simulation model.
             This model powers the executive-friendly scenario tool, where users can adjust business inputs
             and see how the predicted risk changes.
             """
@@ -2458,7 +2458,7 @@ elif page == "Model Performance":
 
                 st.markdown(
                     """
-                    This shows how much fraud the manual simulation model can identify when only a limited
+                    This shows how much fraud the scenario simulation model can identify when only a limited
                     share of transactions can be reviewed.
                     """
                 )
@@ -2482,7 +2482,7 @@ elif page == "Model Performance":
 
                 st.divider()
                 
-                render_global_explanation_explainer()
+                
 
                 render_saved_model_insights(
                     model_folder="manual_model",
@@ -2490,8 +2490,10 @@ elif page == "Model Performance":
                     shap_file_name="global_shap_summary_business_names.png",
                     importance_file_name="feature_importance_gain_business_names.png",
                 )
-
-                with st.expander("Full manual performance file"):
+                
+                render_global_explanation_explainer()
+                
+                with st.expander("Full performance file"):
                     st.dataframe(manual_performance_df, use_container_width=True)
 
             if not manual_feature_importance.empty:

@@ -976,72 +976,67 @@ def render_model_metric_explainer(row, threshold_value, model_context="upload"):
         model_wording = "upload prioritization model"
         use_case_wording = "ranking uploaded transactions for investigation"
 
-    st.info(
-        f"""
-        **How to read these results in business terms**
+    with st.expander("How to read these results in business terms", expanded=False):
+        st.markdown(
+            f"""
+            - **ROC-AUC: {float(roc_auc):.3f} — {roc_label}.**  
+              This shows how well the {model_wording} separates higher-risk transactions from lower-risk transactions overall. 
+              A higher value means the model is better at ranking genuinely suspicious transactions above normal ones.
 
-        - **ROC-AUC: {float(roc_auc):.3f} — {roc_label}.**  
-          This shows how well the {model_wording} separates higher-risk transactions from lower-risk transactions overall. 
-          A higher value means the model is better at ranking genuinely suspicious transactions above normal ones.
+            - **PR-AUC: {float(pr_auc):.3f} — {pr_label}.**  
+              This is especially important for fraud because fraud cases are rare. It shows whether the model can find fraud cases 
+              without overwhelming the review team with too many false alerts.
 
-        - **PR-AUC: {float(pr_auc):.3f} — {pr_label}.**  
-          This is especially important for fraud because fraud cases are rare. It shows whether the model can find fraud cases 
-          without overwhelming the review team with too many false alerts.
+            - **Best threshold: {format_pct(threshold_value)}.**  
+              This is the score cut-off used to classify transactions as higher risk. In practice, this threshold should be adjusted 
+              based on review capacity, risk appetite, and how many cases the team can realistically investigate.
 
-        - **Best threshold: {format_pct(threshold_value)}.**  
-          This is the score cut-off used to classify transactions as higher risk. In practice, this threshold should be adjusted 
-          based on review capacity, risk appetite, and how many cases the team can realistically investigate.
-
-        - **Features.**  
-          This is the number of model-ready signals used for prediction. More features does not automatically mean a better model; 
-          what matters is whether those signals help support {use_case_wording}.
-        """
-    )
+            - **Features.**  
+              This is the number of model-ready signals used for prediction. More features does not automatically mean a better model; 
+              what matters is whether those signals help support {use_case_wording}.
+            """
+        )
 
 
 def render_review_capacity_explainer(review_perf_df):
     """
     Business-friendly explanation for review capacity, recall, and precision.
     """
-    st.info(
-        """
-        **How to read review capacity performance**
+    with st.expander("How to read review capacity performance", expanded=False):
+        st.markdown(
+            """
+            This section answers a practical business question:  
+            **If the team can only review the highest-risk 1%, 3%, 5%, or 10% of transactions, how much fraud could they catch?**
 
-        This section answers a practical business question:  
-        **If the team can only review the highest-risk 1%, 3%, 5%, or 10% of transactions, how much fraud could they catch?**
+            - **Review capacity** = the share of transactions the team chooses to investigate.
+            - **Review count** = how many transactions that would mean in practice.
+            - **Fraud caught** = how many actual fraud cases are found in that review group.
+            - **Recall** = the share of all fraud cases captured by reviewing that top-risk group.
+            - **Precision** = how many reviewed cases are actually fraud.
 
-        - **Review capacity** = the share of transactions the team chooses to investigate.
-        - **Review count** = how many transactions that would mean in practice.
-        - **Fraud caught** = how many actual fraud cases are found in that review group.
-        - **Recall** = the share of all fraud cases captured by reviewing that top-risk group.
-        - **Precision** = how many reviewed cases are actually fraud.
-
-        For fraud analytics, this is often more useful than accuracy because the goal is not to classify every transaction perfectly. 
-        The goal is to help investigators spend limited review time on the cases most likely to matter.
-        """
-    )
-
+            For fraud analytics, this is often more useful than accuracy because the goal is not to classify every transaction perfectly. 
+            The goal is to help investigators spend limited review time on the cases most likely to matter.
+            """
+        )
 
 def render_global_explanation_explainer():
     """
     Business-friendly explanation for global SHAP and feature importance.
     """
-    st.info(
-        """
-        **How to read the global model explanation**
+    with st.expander("How to read the global model explanation", expanded=False):
+        st.markdown(
+            """
+            These charts explain what the model tends to rely on across many transactions, not just one case.
 
-        These charts explain what the model tends to rely on across many transactions, not just one case.
+            - **Global SHAP summary** shows which signals usually push fraud risk up or down. 
+              Points further to the right increase predicted risk; points further to the left reduce predicted risk.
 
-        - **Global SHAP summary** shows which signals usually push fraud risk up or down. 
-          Points further to the right increase predicted risk; points further to the left reduce predicted risk.
+            - **Feature importance** shows which signals the model used most often or found most useful when making predictions.
 
-        - **Feature importance** shows which signals the model used most often or found most useful when making predictions.
-
-        These charts are useful for explaining the model's overall behavior, but they should not be read as business rules. 
-        For example, a feature can be important to the model without meaning that every transaction with that feature is automatically suspicious.
-        """
-    )
-
+            These charts are useful for explaining the model's overall behavior, but they should not be read as business rules. 
+            For example, a feature can be important to the model without meaning that every transaction with that feature is automatically suspicious.
+            """
+        )
 apply_app_theme()
 
 
@@ -2043,14 +2038,6 @@ elif page == "Scenario Simulation":
 
     mh, mm = get_thresholds(manual_metadata)
 
-    c1, c2, c3 = st.columns(3)
-    c1.metric("Manual model", manual_metadata.get("model_name", "manual_simulation_model"))
-    c2.metric("Model features", f"{len(manual_model_features):,}")
-    c3.metric("High-risk threshold", format_pct(mh))
-
-    st.info(
-        "This scenario model is intentionally simpler than the upload model. Use it to explain concepts and test scenarios, not as the primary operational detector."
-    )
 
     # ------------------------------------------------------------------
     # Important Streamlit behavior:
@@ -2073,7 +2060,7 @@ elif page == "Scenario Simulation":
         )
 
     sample_row = None
-    with st.expander("Optional: start from a sample validation scenario", expanded=False):
+    with st.expander("Start from a sample validation scenario", expanded=False):
         if sample_manual_inputs.empty:
             st.caption("sample_manual_inputs.csv was not found, so the form will start blank/defaulted.")
         else:
@@ -2332,13 +2319,6 @@ elif page == "Model Performance":
         else:
             row = performance_df.iloc[0]
 
-            # c1, c2, c3, c4 = st.columns(4)
-            # c1.metric("ROC-AUC", f"{row.get('roc_auc', 0):.3f}")
-            # c2.metric("PR-AUC", f"{row.get('pr_auc', 0):.3f}")
-            # c3.metric("Best threshold", format_pct(row.get("best_threshold", high_threshold)))
-            # c4.metric("Features", f"{int(row.get('n_features', len(selected_features))):,}")
-            
-
             c1, c2, c3, c4 = st.columns(4)
             c1.metric(
                 "ROC-AUC",
@@ -2440,11 +2420,38 @@ elif page == "Model Performance":
                 mh, _ = get_thresholds(manual_metadata)
 
                 c1, c2, c3, c4 = st.columns(4)
-                c1.metric("ROC-AUC", f"{row.get('roc_auc', 0):.3f}")
-                c2.metric("PR-AUC", f"{row.get('pr_auc', 0):.3f}")
-                c3.metric("Best threshold", format_pct(row.get("best_threshold", mh)))
-                c4.metric("Features", f"{int(row.get('n_features', 0)):,}")
-
+                c1.metric(
+                    "ROC-AUC",
+                    f"{row.get('roc_auc', 0):.3f}",
+                    help=(
+                        "Shows how well the scenario simulation model separates higher-risk scenarios from lower-risk ones overall. "
+                        "A higher value means the model is better at ranking suspicious scenarios above normal ones."
+                    ),
+                )
+                c2.metric(
+                    "PR-AUC",
+                    f"{row.get('pr_auc', 0):.3f}",
+                    help=(
+                        "Especially important for fraud because fraud cases are rare. "
+                        "It shows how well the model identifies fraud scenarios without producing too many false alerts."
+                    ),
+                )
+                c3.metric(
+                    "Best threshold",
+                    format_pct(row.get("best_threshold", mh)),
+                    help=(
+                        "This is the risk-score cut-off used to classify scenarios as higher risk. "
+                        "In practice, the threshold can be adjusted depending on business tolerance for false positives and review effort."
+                    ),
+                )
+                c4.metric(
+                    "Features",
+                    f"{int(row.get('n_features', 0)):,}",
+                    help=(
+                        "The number of model-ready signals used by the scenario simulation model. "
+                        "These include both direct business inputs and generated features derived from them."
+                    ),
+                )
                 render_model_metric_explainer(row=row, threshold_value=row.get("best_threshold", mh), model_context="scenario",)
                 
                 st.subheader("Review capacity performance")

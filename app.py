@@ -2238,7 +2238,7 @@ elif page == "Scenario Simulation":
                 st.exception(e)
 
     else:
-        st.caption("Score a manual scenario to see the prediction, generated features, and explanation controls.")
+        st.caption("Score a scenario to see the prediction, generated features, and explanation controls.")
 
 
 # ============================================================
